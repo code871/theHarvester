@@ -10,12 +10,11 @@ on:
     - '*'
 jobs:
   Python:
-
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.6, 3.7]
+        python-version: [3.7]
 
     steps:
     - uses: actions/checkout@v1
@@ -25,6 +24,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
+        pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Run theHarvester module baidu
@@ -35,9 +35,9 @@ jobs:
       run: |
         python theHarvester.py -d metasploit.com -b bing
 
-    - name: Run theHarvester module censys
+    - name: Run theHarvester module certspotter
       run: |
-        python theHarvester.py -d metasploit.com -b censys
+        python theHarvester.py -d metasploit.com -b certspotter
 
     - name: Run theHarvester module crtsh
       run: |
@@ -112,6 +112,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-#    - name: Check static type checking with mypy
-#      run: |
-#        mypy *.py
+    - name: Static type checking with mypy
+      run: |
+        mypy --pretty theHarvester/*/*.py

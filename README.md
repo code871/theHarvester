@@ -17,9 +17,9 @@ Passive:
 
 * bing: Microsoft search engine - www.bing.com
 
-* bingapi: Microsoft search engine, through the API (Requires API key, see below.)
+* bingapi: Microsoft search engine, through the API (Requires an API key, see below.)
 
-* censys: Censys.io search engine - www.censys.io
+* CertSpotter: Cert Spotter monitors Certificate Transparency logs - https://sslmate.com/certspotter/
 
 * crtsh: Comodo Certificate search - www.crt.sh
 
@@ -31,25 +31,29 @@ Passive:
 
 * Exalead: a Meta search engine - https://www.exalead.com/search
 
-* github-code: Github code search engine (Requires Github Personal Access Token, see below.) - www.github.com
+* github-code: Github code search engine (Requires a Github Personal Access Token, see below.) - www.github.com
 
 * google: Google search engine (Optional Google dorking.) - www.google.com
 
-* hunter: Hunter search engine (Requires API key, see below.) - www.hunter.io
+* hunter: Hunter search engine (Requires an API key, see below.) - www.hunter.io
 
-* intelx: Intelx search engine (Requires API key, see below.) - www.intelx.io
+* intelx: Intelx search engine (Requires an API key, see below.) - www.intelx.io
 
-* linkedin: Google search engine, specific search for Linkedin users - www.linkedin.com
+* linkedin: Google search engine, specific search for LinkedIn users - www.linkedin.com
 
-* netcraft: Netcraft Data Mining - www.netcraft.com
+* netcraft: Internet Security and Data Mining - www.netcraft.com
 
 * otx: AlienVault Open Threat Exchange - https://otx.alienvault.com
 
 * securityTrails: Security Trails search engine, the world's largest repository<br>
-  of historical DNS data (Requires API key, see below.) - www.securitytrails.com
+  of historical DNS data (Requires an API key, see below.) - www.securitytrails.com
 
 * shodan: Shodan search engine, will search for ports and banners from discovered<br>
   hosts - www.shodanhq.com
+
+* Spyse: Web research tools for professionals (Requires an API key.) - https://spyse.com/
+
+* Suip: Web research tools that can take over 10 minutes to run, but worth the wait. - https://suip.biz/
 
 * threatcrowd: Open source threat intelligence - www.threatcrowd.org
 
@@ -73,30 +77,33 @@ Modules that require an API key:
 --------------------------------
 Add your keys to api-keys.yaml
 
-* bingapi
+* bing
 * github
 * hunter
 * intelx
 * securityTrails
 * shodan
+* spyse
 
 Dependencies:
 -------------
-* Python 3.6+
-* python3 -m pip install -r requirements.txt
-* Recommend that you use a virtualenv when cloning from git
+* Python 3.7+
+* python3 -m pip install pipenv
+* pipenv install
 
 Comments, bugs, or requests?
 ----------------------------
 * [![Twitter Follow](https://img.shields.io/twitter/follow/laramies.svg?style=social&label=Follow)](https://twitter.com/laramies) Christian Martorella @laramies
-* cmartorella@edge-security.com
+cmartorella@edge-security.com
+* [![Twitter Follow](https://img.shields.io/twitter/follow/NotoriousRebel1.svg?style=social&label=Follow)](https://twitter.com/NotoriousRebel1) Matthew Brown @NotoriousRebel1
+* [![Twitter Follow](https://img.shields.io/twitter/follow/jay_townsend1.svg?style=social&label=Follow)](https://twitter.com/jay_townsend1) Jay "L1ghtn1ng" Townsend @jay_townsend1
 
 Main contributors:
 ------------------
 * [![Twitter Follow](https://img.shields.io/twitter/follow/NotoriousRebel1.svg?style=social&label=Follow)](https://twitter.com/NotoriousRebel1) Matthew Brown @NotoriousRebel1
 * [![Twitter Follow](https://img.shields.io/twitter/follow/jay_townsend1.svg?style=social&label=Follow)](https://twitter.com/jay_townsend1) Jay "L1ghtn1ng" Townsend @jay_townsend1
-* [![LinkedIn](https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25.png)](https://www.linkedin.com/in/janoszold/)  Janos Zold
 * [![Twitter Follow](https://img.shields.io/twitter/follow/discoverscripts.svg?style=social&label=Follow)](https://twitter.com/discoverscripts) Lee Baird @discoverscripts 
+* [![LinkedIn](https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25.png)](https://www.linkedin.com/in/janoszold/)  Janos Zold
 
 Thanks:
 -------
